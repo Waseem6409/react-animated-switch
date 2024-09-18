@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build-and-update:
+  Publish_NPM_Package:
     runs-on: ubuntu-latest
 
     steps:
