@@ -15,6 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'npm'
+
       - name: Install jq (if needed)
         run: |
           if ! command -v jq &> /dev/null; then
@@ -61,7 +66,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-      - name: Publish package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
