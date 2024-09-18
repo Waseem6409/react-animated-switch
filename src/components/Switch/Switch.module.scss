@@ -1,0 +1,70 @@
+$duration: 0.5s;
+
+.mainContainer {
+  position: relative;
+  cursor: pointer;
+  .switchContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .track {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      transition: all ease-in-out $duration;
+    }
+
+    .trackActive {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      transition: all ease-in-out $duration;
+    }
+
+    .thumb {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all ease-in-out $duration;
+      animation: thumbInActive $duration forwards;
+    }
+
+    .thumbActive {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all ease-in-out $duration;
+      animation: thumbActive $duration forwards;
+    }
+  }
+}
+
+@keyframes thumbActive {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+  }
+
+  50% {
+    border-radius: 50% 5% 50% 50%;
+  }
+
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+@keyframes thumbInActive {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+  }
+
+  50% {
+    border-radius: 50% 50% 50% 5%;
+  }
+
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+}

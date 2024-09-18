@@ -1,0 +1,60 @@
+.mainContainer {
+  position: relative;
+  cursor: pointer;
+}
+.mainContainer .switchContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.mainContainer .switchContainer .track {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 0.5s;
+}
+.mainContainer .switchContainer .trackActive {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 0.5s;
+}
+.mainContainer .switchContainer .thumb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all ease-in-out 0.5s;
+  animation: thumbInActive 0.5s forwards;
+}
+.mainContainer .switchContainer .thumbActive {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all ease-in-out 0.5s;
+  animation: thumbActive 0.5s forwards;
+}
+
+@keyframes thumbActive {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  50% {
+    border-radius: 50% 5% 50% 50%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+@keyframes thumbInActive {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  50% {
+    border-radius: 50% 50% 50% 5%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+}
