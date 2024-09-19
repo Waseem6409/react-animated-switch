@@ -3,9 +3,6 @@ $duration: 0.5s;
 .mainContainer {
   position: relative;
   cursor: pointer;
-  * {
-    transition: all ease-in-out $duration;
-  }
   .switchContainer {
     width: 100%;
     height: 100%;
