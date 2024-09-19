@@ -56,7 +56,8 @@ function Switch(props: Props) {
       }}
       style={{
         width,
-        height
+        height,
+        borderRadius: "calc(100vw / 2)"
       }}
     >
       <div className={styles.switchContainer}>
