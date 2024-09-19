@@ -1,6 +1,6 @@
 {
   "name": "react-animated-switch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A customizable toggle-switch component for React",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
