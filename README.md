@@ -49,7 +49,7 @@ export default App
 | Prop                                  | Type              | Default                                                                                  | Description                                                                                                                                                                                                               |
 | ------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | checked                               | bool              | **Required**                                                                             | If true, the switch is set to checked. If false, it is not checked.                                                                                                                                                       |
-| onChange _(value:boolean)_ | func              | **Required**                                                                             | Invoked when the user clicks or drags the switch. It is passed three arguments: _checked_, which is a boolean that describes the presumed future state of the checked prop (1), the event object (2) and the id prop (3). |                                                                           |
+| onChange _(value:boolean)_ | func              | **Required**                                                                             | Invoked when the user clicks the switch. It is passed one argument: _value_, which is a boolean that describes the presumed future state of the checked . |                                                                           |
 | inActiveTrackColor                              | string            | '#D3D3D3'                                                                                   | The switch track will take on this color when it is _not_ checked. Only accepts hex-colors.                                                                                                                                     |
 | activeTrackColor                              | string            | '#0097EB'                                                                                   | The switch track will take on this color when it is checked. Only accepts hex-colors.
 | inActiveThumbColor                              | string            | '#FFFFFF'                                                                                   | The switch thumb will take on this color when it is _not_ checked. Only accepts hex-colors.                                                                                                                                     |
@@ -62,7 +62,7 @@ export default App
 
 ---
 
-**NOTE**: When passing className as prop you may have to use !important with styling to overwrite the default styles
+**NOTE**: When passing className as prop you may have to use !important with css styling to overwrite the default styles
 
 ## Contributors
 
