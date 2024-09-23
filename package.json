@@ -26,7 +26,11 @@
     "checkbox",
     "react",
     "react-component",
-    "animated"
+    "animated",
+    "react-switch",
+    "react-toggle",
+    "react-animated-toggle",
+    "react-animated-switch"
   ],
   "author": "Waseem6409",
   "license": "MIT",
