@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import styles from "./Switch.module.css"
 
 interface Props {
@@ -73,8 +73,8 @@ function Switch(props: Props) {
           style={{
             left: checked ? `calc(100% - ${containerHeight}px)` : "0%",
             backgroundColor: checked ? activeThumbColor : inActiveThumbColor,
-            height: `${containerHeight * 0.95}px`,
-            width: `${containerHeight * 0.95}px`,
+            height: `${containerHeight * 0.9}px`,
+            width: `${containerHeight * 0.9}px`,
             marginLeft: `${containerHeight * 0.025}px`
           }}
         ></div>
